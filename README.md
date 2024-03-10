@@ -1,18 +1,29 @@
-
 # Digit_Recognition_Web_App
-<br>
-<h3>Structure of App</h3>
-<h2> keras - > Tensorflow.js ->(html + css + javascript)->github pages</h1>
-  <h3>Hello World of Object Recognition!</h3>
- <h2>Aim:</h2> To make a convolution neural network to recognise handwritten digits by training the model on MNIST dataset available in keras.
- <br>
- <h2>MNIST DATASET:</h2>The training dataset contain 60000 images and testing contain 10000 images .Each image is 28x28 pixel and grey scale.
-  <br>
- <h2>CNN MODEL OVERVIEW:</h2>
- <br>⚈ It is a 17 layer model with Conv2D,MaxPooling2D,BatchNormalization,Dense,Flatten and Dropout layer combination.
- <br>⚈ Input layer has 32 neuron and output layer has 10 neurons as 10 different clases exsist.
- <br>⚈ 30 epochs are used.
- <br>⚈ Categorical_loss is loss function and adam is used for optimization.
- <br>⚈ Model gives 99.15% accuracy.
-<h2>For Deployment:</h2>Save model using tensorflowjs converters as json file and weight as .h5 file.Use Tensorflow.js to load model and predict in javascript file
 
+## Structure of App
+
+### Technologies Used
+- Keras
+- TensorFlow.js
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+## Introduction
+This project aims to create a convolutional neural network (CNN) for recognizing handwritten digits. The model is trained on the MNIST dataset available in Keras.
+
+## MNIST Dataset
+The MNIST dataset consists of 60,000 training images and 10,000 testing images. Each image is 28x28 pixels and grayscale.
+
+## CNN Model Overview
+- The model consists of 17 layers, including Conv2D, MaxPooling2D, BatchNormalization, Dense, Flatten, and Dropout layers.
+- The input layer has 32 neurons, and the output layer has 10 neurons representing the 10 different classes.
+- The model is trained for 30 epochs.
+- Categorical cross-entropy is used as the loss function, and Adam is used for optimization.
+- The model achieves an accuracy of 99.15%.
+
+## Deployment
+To deploy the model:
+1. Save the model using TensorFlow.js converters as a JSON file and the weights as an .h5 file.
+2. Use TensorFlow.js to load the model and make predictions in a JavaScript file.
